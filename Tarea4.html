@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_Tarea_4</title>
+</head>
+<body>
+    <form action="/envio_formulario" method="post">
+        <ul>
+            <li>
+                <label for="nombre">Nombre: </label>
+                <input type="text" maxlength="20" id="nombre" name="nombre_usuario" required placeholder="nombre" autofocus />
+            </li>
+            <li>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido_usuario" required placeholder="apellido" />
+            </li>
+            <li>
+                <label for="documentoIdentidad">Documento de identidad: </label>
+                <input type="text" pattern="DNI" name="documento_usuario" required placeholder="DNI/NIE" />
+            </li>
+            <li>
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" min="0" max="100" name="edad_usuario" placeholder="edad" />
+            </li>
+            <li>
+                <label for="fechaNacimiento">Fecha de nacimiento: </label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento_usuario" placeholder="Fecha de nacimiento"/>
+            </li>
+            <li>
+                <label for="correo">Correo electronico: </label>
+                <input type="email" id="correo" name="mail_usuario" placeholder="Correo Electronico" />
+            </li>
+            <li>
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" id="contraseña" name="contraseña_usuario" required placeholder="Contraseña" />
+            </li>
+            <li>
+                <label for="fotografia">Fotografia del DNI </label>
+                <input type="file" id="fotografia" alt="imagen" name="documento_usuario" multiple required placeholder="Fotografia de identidad"/>
+            </li>
+            <li class="button">
+                <button type="submit">Enviar formulario</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
